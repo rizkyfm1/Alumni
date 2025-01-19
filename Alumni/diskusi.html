@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Diskusi Alumni - AMIK YPAT Purwakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #662000;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li:hover > a {
+            background-color: #662000;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0e0b0b;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 100px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .forum-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .forum-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .forum-header h1 {
+            color: #141414;
+        }
+        .discussion {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .discussion:last-child {
+            border-bottom: none;
+        }
+        .discussion h3 {
+            margin: 0 0 10px;
+            color: #131414;
+        }
+        .discussion p {
+            margin: 0;
+            line-height: 1.5;
+        }
+        .feedback {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .feedback input, .feedback textarea, .feedback button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .feedback button {
+            background-color: #101111;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .feedback button:hover {
+            background-color: #101111;
+        }
+        .new-discussion {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .new-discussion button {
+            background-color: #101111;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .new-discussion button:hover {
+            background-color: #101111;
+        }
+        .footer {
+            background-color: #111314;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .logo {
+    display: flex;
+    align-items: center; /* Membuat logo dan teks sejajar secara vertikal */
+    gap: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+.logo img {
+    height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+    width: auto; /* Menjaga proporsi gambar */
+}
+
+.logo h1 {
+    font-size: 1.5rem; /* Ukuran teks */
+    margin: 0; /* Menghilangkan margin default */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="LOGO.png" alt="Logo AMIK YPAT Purwakarta">
+                <h1>AMIK YPAT Purwakarta</h1>
+            </div>   
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="program.html">Program Studi</a></li>
+                <li>
+                    <a href="">Alumni</a>
+                    <ul>
+                        <li><a href="profil.html">Profil Alumni</a></li>
+                        <li><a href="galeri.html">Galeri Proyek</a></li>
+                        <li><a href="diskusi.html">Forum Diskusi</a></li>
+                    </ul>
+                    <li><a href="#">Kontak</a></li>
+                </li>
+              
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="forum-container">
+            <div class="forum-header">
+                <h1>Forum Diskusi Alumni</h1>
+                <p>Tempat bertukar pikiran, berbagi pengalaman, dan memperluas jaringan profesional.</p>
+            </div>
+            <div class="discussion">
+                <h3>Topik: Pengalaman Kerja di Industri Teknologi</h3>
+                <p>Oleh: Amri Aziz</p>
+                <p>Isi: Halo semua, saya ingin berbagi pengalaman saya bekerja di startup teknologi dan bagaimana membangun karier di bidang ini...</p>
+                <div class="feedback">
+                    <h4>Berikan Feedback:</h4>
+                    <input type="text" placeholder="Nama Anda">
+                    <textarea rows="3" placeholder="Tulis komentar atau feedback Anda..."></textarea>
+                    <button>Kirim Feedback</button>
+                </div>
+            </div>
+            
+            <div class="new-discussion">
+                <button>Buat Diskusi Baru</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 AMIK YPAT Purwakarta. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

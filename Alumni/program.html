@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Studi - AMIK YPAT Purwakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #662000;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li:hover > a {
+            background-color: #662000;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0e0b0b;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        .hero {
+            background: url('program.jpg') no-repeat center center/cover;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #0e0f0f;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .content ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+        .footer {
+            background-color: #080808;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .logo {
+    display: flex;
+    align-items: center; /* Membuat logo dan teks sejajar secara vertikal */
+    gap: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+.logo img {
+    height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+    width: auto; /* Menjaga proporsi gambar */
+}
+
+.logo h1 {
+    font-size: 1.5rem; /* Ukuran teks */
+    margin: 0; /* Menghilangkan margin default */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="LOGO.png" alt="Logo AMIK YPAT Purwakarta">
+                <h1>AMIK YPAT Purwakarta</h1>
+            </div>   
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="program.html">Program Studi</a></li>
+                <li>
+                    <a href="">Alumni</a>
+                    <ul>
+                        <li><a href="profil.html">Profil Alumni</a></li>
+                        <li><a href="galeri.html">Galeri Alumni</a></li>
+                        <li><a href="diskusi.html">Diskusi Alumni</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        
+    </section>
+    <section class="content">
+        <h2>Program Studi yang Tersedia</h2>
+        <p>AMIK YPAT Purwakarta menawarkan program studi yang dirancang untuk memenuhi kebutuhan dunia kerja dan industri modern. Berikut adalah program studi yang tersedia:</p>
+        <ul>
+            <li><strong>Manajemen Informatika (D3)</strong> - Program ini berfokus pada pengelolaan sistem informasi dan aplikasi bisnis berbasis teknologi.</li>
+            <li><strong>Teknik Informatika (D3)</strong> - Program ini menekankan pada pengembangan perangkat lunak, jaringan komputer, dan pemrograman.</li>
+            <li><strong>Sistem Informasi (D4)</strong> - Program ini setara dengan jenjang sarjana dan mempersiapkan lulusan untuk menjadi ahli dalam analisis dan pengelolaan sistem informasi.</li>
+        </ul>
+        <h2>Fasilitas Pendukung</h2>
+        <p>Untuk mendukung proses pembelajaran, kami menyediakan:</p>
+        <ul>
+            <li>Laboratorium komputer dengan teknologi terbaru.</li>
+            <li>Perpustakaan dengan koleksi buku dan jurnal terkini.</li>
+            <li>Kegiatan praktikum untuk mengasah keterampilan mahasiswa.</li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 AMIK YPAT Purwakarta. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

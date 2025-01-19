@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Proyek - AMIK YPAT Purwakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #662000;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li:hover > a {
+            background-color: #662000;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0e0b0b; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        .hero {
+            background: url('galeri.jpg') no-repeat center center/cover;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item .info {
+            padding: 15px;
+        }
+        .gallery-item .info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #003366;
+        }
+        .gallery-item .info p {
+            margin: 5px 0;
+            line-height: 1.5;
+            font-size: 0.9em;
+        }
+        .footer {
+            background-color: #0f0f0f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .logo {
+    display: flex;
+    align-items: center; /* Membuat logo dan teks sejajar secara vertikal */
+    gap: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+.logo img {
+    height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+    width: auto; /* Menjaga proporsi gambar */
+}
+
+.logo h1 {
+    font-size: 1.5rem; /* Ukuran teks */
+    margin: 0; /* Menghilangkan margin default */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="LOGO.png" alt="Logo AMIK YPAT Purwakarta">
+                <h1>AMIK YPAT Purwakarta</h1>
+            </div>   
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="program.html">Program Studi</a></li>
+                <li>
+                    <a href="">Alumni</a>
+                    <ul>
+                        <li><a href="profil.html">Profil Alumni</a></li>
+                        <li><a href="galeri.html">Galeri Proyek</a></li>
+                        <li><a href="diskusi.html">Diskusi Alumni</a></li>
+                    </ul>
+                    <li><a href="#">Kontak</a></li>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Galeri Proyek</h1>
+    </section>
+    <section class="content">
+        <h2>Proyek Alumni</h2>
+        <p>Berikut adalah kumpulan proyek yang telah dibuat oleh mahasiswa dan alumni AMIK YPAT Purwakarta:</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="aplikasikeungan.jpg" alt="Proyek 1">
+                <div class="info">
+                    <h3>Aplikasi Keuangan</h3>
+                    <p>Pengembang: Amril Aziz</p>
+                    <p>Deskripsi: Aplikasi manajemen keuangan untuk usaha kecil.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="perpustakaan.jpg" alt="Proyek 2">
+                <div class="info">
+                    <h3>Sistem Informasi Perpustakaan</h3>
+                    <p>Pengembang: Ahmad Sanusi</p>
+                    <p>Deskripsi: Sistem yang membantu manajemen buku dan peminjaman.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="e-commers.jpg" alt="Proyek 3">
+                <div class="info">
+                    <h3>Website E-Commerce</h3>
+                    <p>Pengembang: Rizky Septian</p>
+                    <p>Deskripsi: Platform belanja online untuk produk lokal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 AMIK YPAT Purwakarta. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

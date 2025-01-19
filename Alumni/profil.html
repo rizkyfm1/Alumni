@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Alumni - AMIK YPAT Purwakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #662000;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li:hover > a {
+            background-color: #662000;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0e0b0b;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .frame {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .frame img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .frame .info {
+            padding: 15px;
+        }
+        .frame .info h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #131414;
+        }
+        .frame .info p {
+            margin: 5px 0;
+            line-height: 1.5;
+            font-size: 0.9em;
+        }
+        .footer {
+            background-color: #171718;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .logo {
+    display: flex;
+    align-items: center; /* Membuat logo dan teks sejajar secara vertikal */
+    gap: 10px; /* Memberikan jarak antara logo dan teks */
+}
+
+.logo img {
+    height: 50px; /* Atur tinggi logo sesuai kebutuhan */
+    width: auto; /* Menjaga proporsi gambar */
+}
+
+.logo h1 {
+    font-size: 1.5rem; /* Ukuran teks */
+    margin: 0; /* Menghilangkan margin default */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="LOGO.png" alt="Logo AMIK YPAT Purwakarta">
+                <h1>AMIK YPAT Purwakarta</h1>
+            </div>   
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="program.html">Program Studi</a></li>
+                <li>
+                    <a href="">Alumni</a>
+                    <ul>
+                        <li><a href="profil.html">Profil Alumni</a></li>
+                        <li><a href="galeri.html">Galeri Alumni</a></li>
+                        <li><a href="diskusi.html">Diskusi Alumni</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="frame">
+            <img src="foto4.png" alt="Foto Alumni 1">
+            <div class="info">
+                <h3>Alumni</h3>
+                <p><strong>Nama:</strong> Amril Aziz</p>
+                <p><strong>Jurusan:</strong> Manajemen Informatika</p>
+                <p><strong>Tahun Lulus:</strong> 2020</p>
+                <p><strong>Pekerjaan:</strong> Analis Data di PT XYZ</p>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="foto5.png" alt="Foto Alumni 2">
+            <div class="info">
+                <h3>Alumni</h3>
+                <p><strong>Nama:</strong> Ahmad Sanusi</p>
+                <p><strong>Jurusan:</strong> Manajemen Informatika</p>
+                <p><strong>Tahun Lulus:</strong> 2018</p>
+                <p><strong>Pekerjaan:</strong> Software Engineer di ABC Corp</p>
+            </div>
+        </div>
+        <div class="frame">
+            <img src="foto9.png" alt="Foto Alumni 3">
+            <div class="info">
+                <h3>Alumni</h3>
+                <p><strong>Nama:</strong>Rizky Septian</p>
+                <p><strong>Jurusan:</strong> Manajemen Informatika</p>
+                <p><strong>Tahun Lulus:</strong> 2019</p>
+                <p><strong>Pekerjaan:</strong> Konsultan IT di DEF Solutions</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 AMIK YPAT Purwakarta. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

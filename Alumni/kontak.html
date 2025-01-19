@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - AMIK YPAT Purwakarta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content h1 {
+            color: #003366;
+            text-align: center;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #00509e;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kontak Kami</h1>
+    </header>
+    <section class="content">
+        <h1>Hubungi AMIK YPAT Purwakarta</h1>
+        <div class="contact-info">
+            <p><strong>Alamat:</strong> Jl. Contoh No. 123, Purwakarta, Jawa Barat</p>
+            <p><strong>Email:</strong> info@amikypatpurwakarta.ac.id</p>
+            <p><strong>Telepon:</strong> (0264) 123-456</p>
+            <p><strong>Jam Operasional:</strong> Senin - Jumat, 08:00 - 16:00</p>
+        </div>
+        <div class="contact-form">
+            <h2>Kirim Pesan</h2>
+            <form action="#" method="post">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda" required>
+
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 AMIK YPAT Purwakarta. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
