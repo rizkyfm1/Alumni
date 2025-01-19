@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+         body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f4f4;
+            text-align: left;
+        }
+
+        .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumb-item a {
+            text-decoration: none;
+            color: #bf0707;
+        }
+
+        .breadcrumb-item.active {
+            color: #555;
+        }
+
+        .content {
+            margin: 50px auto;
+            max-width: 800px;
+            text-align: left;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-bubble {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-bubble img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .contact-bubble .info {
+            text-align: left;
+        }
+
+        .contact-bubble .info h5 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .contact-bubble .info p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #191818;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #8f94fb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        form input:focus, form textarea:focus {
+            border-color: #fff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+            outline: none;
+        }
+        form button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .top-bar {
+            background-color: #1e1e1e;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .top-bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .top-bar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .top-bar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .main-header {
+            background-color: #bf0707;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            gap: 50px;
+        }
+
+        .main-header .logo {
+            width: 50px;
+            vertical-align: middle;
+        }
+
+        .main-header h1 {
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f4f4;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #af1616, #0d0c06);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .journal-card {
+            background: #fff;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(11, 11, 11, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .journal-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(122, 0, 0, 0.2);
+        }
+
+        .journal-card .card-body {
+            padding: 20px;
+        }
+
+        .journal-card .btn-primary {
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            border: none;
+        }
+
+        .journal-card .btn-primary:hover {
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+        }
+
+        footer {
+            background-color: #191818;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #8f94fb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex align-items-center p-3" style="background-color: #fdfdfd;">
+        
+        <header class="d-flex align-items-center p-3" style="background-color: #701414; display: flex; justify-content: space-between;">
+            <!-- Logo dan Nama -->
+            <div style="display: flex; align-items: center; background-color: #701414; padding: 10px 20px;">
+                <img src="LOGO.png" alt="Logo" style="height: 45px; width: auto; margin-right: 10px;">
+                <h1 ><a href="https://amikypat-purwakarta.ac.id/" style="font-size: 20px; color: #f7f2f2; ">AMIK-YPAT PURWAKARTA</a></h1>
+            </div>
+            <!-- Menu -->
+            <div style="display: flex; align-items: center; gap: 20px; padding: 0 20px;">
+                <!-- Tentang AMIK -->
+                <div style="position: relative;">
+                    <h2 style="font-size: 16px; margin: 0; color: #ffffff; cursor: pointer;" onclick="toggleDropdown('tentangAmikDropdown')">Tentang AMIK </h2>
+                    <div id="tentangAmikDropdown" class="dropdown-menu" style="display: none;">
+                        <a href="https://amikypat-purwakarta.ac.id/sambutan-direktur" class="dropdown-item">Sambutan Direktur</a>
+                        <a href="https://amikypat-purwakarta.ac.id/sejarah" class="dropdown-item">Sejarah Kampus</a>
+                        <a href="https://amikypat-purwakarta.ac.id/visi-misi" class="dropdown-item">Visi Misi</a>
+                        <a href="https://amikypat-purwakarta.ac.id/struktur-organisasi" class="dropdown-item">Struktur Organisasi</a>
+                        <a href="https://amikypat-purwakarta.ac.id/fasilitas" class="dropdown-item">Fasilitas Kampus</a>
+                    </div>
+                </div>
+                <!-- Akademik -->
+                <div style="position: relative;">
+                    <h2 style="font-size: 16px; margin: 0; color: #ffffff; cursor: pointer;" onclick="toggleDropdown('akademikDropdown')">Akademik </h2>
+                    <div id="akademikDropdown" class="dropdown-menu" style="display: none;">
+                        <a href="https://amikypat-purwakarta.ac.id/jurusan" class="dropdown-item">Jurusan</a>
+                        <a href="https://amikypat-purwakarta.ac.id/kurikulum" class="dropdown-item">Kurikulum</a>
+                        <a href="https://amikypat-purwakarta.ac.id/matakuliah" class="dropdown-item">Mata Kuliah</a>
+                        <a href="https://amikypat-purwakarta.ac.id/biayakuliah" class="dropdown-item">Biaya Kuliah</a>
+                        <a href="https://amikypat-purwakarta.ac.id/staff-pengajar" class="dropdown-item">Staff Pengajar</a>
+                        <a href="https://amikypat-purwakarta.ac.id/allagendas" class="dropdown-item">Agenda Akademik</a>
+                    </div>
+                </div>
+                <!-- Riset & Publikasi -->
+                <div style="position: relative;">
+                    <h2 style="font-size: 16px; margin: 0; color: #ffffff; cursor: pointer;" onclick="toggleDropdown('risetDropdown')">Riset & Publikasi </h2>
+                    <div id="risetDropdown" class="dropdown-menu" style="display: none;">
+                        <a href="https://amikypat-purwakarta.ac.id/inforisets" class="dropdown-item">Informasi Riset</a>
+                        <a href="https://amikypat-purwakarta.ac.id/prosedur-riset" class="dropdown-item">Prosedur Riset</a>
+                        <a href="#" class="dropdown-item">Jurnal Riset</a>
+                    </div>
+                </div>
+                <!-- Penerimaan -->
+                <div style="position: relative;">
+                    <h2 style="font-size: 16px; margin: 0; color: #ffffff; cursor: pointer;" onclick="toggleDropdown('penerimaanDropdown')">Penerimaan </h2>
+                    <div id="penerimaanDropdown" class="dropdown-menu" style="display: none;">
+                        <a href="https://amikypat-purwakarta.ac.id/PMB-AMIK" class="dropdown-item">Penerimaan Mahasiswa Baru</a>
+                        <a href="https://amikypat-purwakarta.ac.id/penerimaan-beasiswa" class="dropdown-item">Penerimaan Beasiswa</a>
+                        <a href="https://amikypat-purwakarta.ac.id/penerimaan-penghargaan" class="dropdown-item">Penerimaan Penghargaan</a>                     
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container mt-4">
+            <div class="content">
+                <h2>All Alumni Post</h2>
+                <p>Halaman ini menampilkan semua postingan dari alumni kami. Silakan kunjungi kembali untuk informasi terbaru.</p>
+    
+                <div class="contact-bubble">
+                    <img src="foto5.png" alt="Alumni Photo">
+                    <div class="info">
+                        <h5>Ahmad Sanusi</h5>
+                        <p>Fasilitas kampus yang mendukung pembelajaran teknologi.</p>
+                    </div>
+                    <img src="foto9.png" alt="Alumni Photo">
+                    <div class="info">
+                        <h5>Rizky Septian</h5>
+                        <p>Materi kuliah atau proyek yang relevan dengan dunia kerja.</p>
+                    </div>
+                    <img src="foto4.png" alt="Alumni Photo">
+                    <div class="info">
+                        <h5>Amril Aziz</h5>
+                        <p>Pengalaman dengan dosen yang menginspirasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <head>
+        <style>
+            .dropdown-menu {
+                position: absolute;
+                top: 30px;
+                left: 0;
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+                padding: 10px 0;
+                display: none;
+            }
+            .dropdown-item {
+                display: block;
+                padding: 5px 20px;
+                color: #000000;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            .dropdown-item:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+    <body>
+  
+   
+   
+    <footer class="mt-5">
+        <p> TERHUBUNG DENGAN KAMI |
+            <a href="https://wa.me/nomor_hp" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+            </a> 
+            <a href="https://www.instagram.com/amikypat?igsh=aGp1aHIycDVpbWx4" target="_blank">
+            <i class="bi bi-instagram"></i>
+            </a> 
+            <a href="https://www.facebook.com/amik.ypat?mibextid=ZbWKwL" target="_blank">
+            <i class="bi bi-facebook"></i>
+            </a> 
+            <a href="https://www.youtube.com/@AmikYpatOfficial" target="_blank">
+            <i class="bi bi-youtube"></i>
+            </a> 
+            <a href="https://twitter.com/your_twitter_handle" target="_blank">
+            <i class="bi bi-twitter"></i>
+            </a> 
+            <a href="https://www.tiktok.com/@your_tiktok_handle" target="_blank">
+            <i class="bi bi-tiktok"></i>
+            </a>
+        </p>
+        <p>&copy; 2025 AMIK-YPAT PURWAKARTA. Dikembangkan dengan cinta oleh tim IT AKBARSUKI.</p>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    </body>
+</html>
